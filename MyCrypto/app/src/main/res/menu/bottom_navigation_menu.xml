@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/prices_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_prices"
+        android:title="@string/menu_title_1" />
+    <item
+        android:id="@+id/favorites_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorites"
+        android:title="@string/menu_title_2" />
+    <item
+        android:id="@+id/portfolio_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_analytics"
+        android:title="@string/menu_title_3" />
+    <item
+        android:id="@+id/news_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="@string/menu_title_4" />
+    <item
+        android:id="@+id/invest_menu"
+        android:enabled="true"
+        android:icon="@drawable/ic_invest"
+        android:title="@string/menu_title_5" />
+
+</menu>

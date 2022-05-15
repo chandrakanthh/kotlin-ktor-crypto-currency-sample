@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Crypto</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_title_1">Prices</string>
+    <string name="menu_title_2">Favorites</string>
+    <string name="menu_title_3">Portfolio</string>
+    <string name="menu_title_4">News</string>
+    <string name="menu_title_5">Invest</string>
+    <string name="dollar_symbol">$%1$s</string>
+    <string name="change_percentile">%1$s%%</string>
+    <string name="global_market_cap_str">Global Market Cap: $%1$s</string>
+    <string name="crypto_name_str">Name</string>
+    <string name="crypto_price_str">Price</string>
+    <string name="crypto_change_str">Change</string>
+    <string name="search_coins_hint_str">Search Coins…</string>
+
+
+
+</resources>
