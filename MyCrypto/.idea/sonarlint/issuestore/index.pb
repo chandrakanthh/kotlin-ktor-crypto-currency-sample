@@ -13,7 +13,5 @@ u
 Eapp/src/main/java/com/example/mycrypto/data/services/RemoteService.kt,e\7\e7e7a33872573feb01e91ec615b2a4b3d521d5e3
 f
 6app/src/main/java/com/example/mycrypto/di/AppModule.kt,0\3\03a9a2436d7e69a093d85e0a6d6928fd0a2abe4e
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 u
 Eapp/src/main/java/com/example/mycrypto/data/services/RepositorySDK.kt,b\1\b1d82e8557d97e3f547ebb54addd78b538dfa9c0

@@ -70,6 +70,10 @@ class PricesFragment : BaseFragment(R.layout.fragment_prices){
 
     private fun onSwipeRefresh() {
         fragmentPricesBinding.swipeRefreshLayoutTag.setOnRefreshListener {
+            if(fragmentPricesBinding.searchViewEt.text?.isNotBlank() == true){
+                fragmentPricesBinding.searchViewEt.text = null
+                fragmentPricesBinding.searchViewEt.clearFocus()
+            }
             pricesViewModel.getCryptoAssetsData()
             fragmentPricesBinding.swipeRefreshLayoutTag.isRefreshing = false
         }
@@ -91,6 +95,7 @@ class PricesFragment : BaseFragment(R.layout.fragment_prices){
                 }
                 is BaseResponse.Success -> {
                     fragmentPricesBinding.pricesPb.hide()
+                    //if(fragmentPricesBinding.swipeRefreshLayoutTag.isRefreshing) fragmentPricesBinding.swipeRefreshLayoutTag.isRefreshing = false
                     it.data?.let { res ->
                         pricesListAdapter.updateData(res.data)
                         updateGlobalMarketCap(res.data)
