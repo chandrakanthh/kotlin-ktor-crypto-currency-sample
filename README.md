@@ -8,3 +8,4 @@ live cryptocurrency price tracker using coin cap api using
 # ktor using android engine
 # navigation components
 # hilt di
+kotlin
