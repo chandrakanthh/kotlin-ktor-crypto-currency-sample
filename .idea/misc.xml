@@ -17,6 +17,12 @@
         <entry key="..\:/MyCrypto/app/src/main/res/layout/assets_list_item.xml" value="0.33" />
         <entry key="..\:/MyCrypto/app/src/main/res/layout/fragment_prices.xml" value="0.33" />
         <entry key="..\:/MyCrypto/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.2125" />
+        <entry key="..\:/mine/kotlin-ktor-crypto-currency-sample/app/src/main/res/drawable/bottom_nav_item_color.xml" value="0.1615" />
+        <entry key="..\:/mine/kotlin-ktor-crypto-currency-sample/app/src/main/res/drawable/search_bg.xml" value="0.1615" />
+        <entry key="..\:/mine/kotlin-ktor-crypto-currency-sample/app/src/main/res/layout/activity_main.xml" value="0.2125" />
+        <entry key="..\:/mine/kotlin-ktor-crypto-currency-sample/app/src/main/res/layout/assets_list_item.xml" value="0.2125" />
+        <entry key="..\:/mine/kotlin-ktor-crypto-currency-sample/app/src/main/res/layout/fragment_favorites.xml" value="0.2125" />
+        <entry key="..\:/mine/kotlin-ktor-crypto-currency-sample/app/src/main/res/layout/fragment_prices.xml" value="0.2125" />
       </map>
     </option>
   </component>

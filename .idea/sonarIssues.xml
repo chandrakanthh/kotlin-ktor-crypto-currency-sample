@@ -8,7 +8,172 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ktor/ktor-client-core-jvm/1.6.5/1d7bbc5b98316dd9c763c86b4ba0a77d3823f254/ktor-client-core-jvm-1.6.5-sources.jar!/jvmMain/io/ktor/client/HttpClientJvm.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/build/generated/source/kapt/debug/com/example/githubtrendingrepos/databinding/TrendingRepoItemBindingImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/BaseApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/data/models/BuiltBy.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/data/models/TrendingRepoModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/data/models/TrendingRepoModelItem.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/data/services/BaseResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/data/services/RemoteService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/data/services/RepositorySDK.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/di/AppModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/ui/base/BaseFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/ui/base/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/ui/trendingrepos/TrendingReposAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/ui/trendingrepos/TrendingReposFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/ui/trendingrepos/TrendingReposViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/java/com/example/githubtrendingrepos/ui/utils/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/drawable/circular_shape_image.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/drawable/ic_star.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/drawable/lang_color_shape.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/drawable/search_bg.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/drawable/trending_repo_item_bg.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/layout/fragment_trending_repos.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/layout/trending_repo_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/navigation/nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/values-night/themes.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/values/dimens.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/app/src/main/res/values/themes.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GithubTrendingRepos/build.gradle">
           <value>
             <set />
           </value>
@@ -24,6 +189,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../JBECOMM_LINT/shared/src/commonMain/kotlin/cloud/justbilling/ecom/shared/commonRepositories/RepositorySDK.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyKmmMaps/androidApp/src/main/java/com/example/mykmmmaps/android/utils/Resource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyKmmMaps/androidApp/src/main/res/layout/activity_main.xml">
           <value>
             <set />
           </value>
@@ -79,6 +254,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/example/mycrypto/ui/base/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/mycrypto/ui/favorites/FavoritesFragment.kt">
           <value>
             <set />
           </value>
@@ -143,6 +323,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_prices.xml">
           <value>
             <set />
@@ -189,16 +374,6 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/gradle.properties">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../MyKmmMaps/androidApp/src/main/java/com/example/mykmmmaps/android/utils/Resource.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../MyKmmMaps/androidApp/src/main/res/layout/activity_main.xml">
           <value>
             <set />
           </value>

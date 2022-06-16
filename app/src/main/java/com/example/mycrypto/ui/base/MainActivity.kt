@@ -43,6 +43,17 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
         activityMainBinding.bottomNavigation.setupWithNavController(navController)
+
+        activityMainBinding.bottomNavigation.setOnItemReselectedListener {
+            when(it.itemId){
+                R.id.prices_menu -> {
+                    navController.navigate(R.id.global_prices_fragment)
+                }
+                R.id.favorites_menu -> {
+                    navController.navigate(R.id.global_favorites_fragment)
+                }
+            }
+        }
     }
 
 }
