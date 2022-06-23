@@ -8,4 +8,6 @@ live cryptocurrency price tracker using coin cap api using
 # ktor using android engine
 # navigation components
 # hilt di
-kotlin
+# kotlin
+         # 23 june 2022 #
+# added rxjava3 and retrofit 
