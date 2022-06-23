@@ -6,10 +6,12 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mycrypto.R
 import com.example.mycrypto.data.models.AssetDataModel
+import com.example.mycrypto.data.models.retrofitmodels.AssetsModelRetrofit
 import com.example.mycrypto.data.services.BaseResponse
 import com.example.mycrypto.databinding.FragmentPricesBinding
 import com.example.mycrypto.ui.base.BaseFragment
@@ -74,7 +76,8 @@ class PricesFragment : BaseFragment(R.layout.fragment_prices){
                 fragmentPricesBinding.searchViewEt.text = null
                 fragmentPricesBinding.searchViewEt.clearFocus()
             }
-            pricesViewModel.getCryptoAssetsData()
+           // pricesViewModel.getCryptoAssetsData()
+            pricesViewModel.getCryptoAssestsDataRetrofit()
             fragmentPricesBinding.swipeRefreshLayoutTag.isRefreshing = false
         }
     }
@@ -88,7 +91,7 @@ class PricesFragment : BaseFragment(R.layout.fragment_prices){
     }
 
     private fun setObservers() {
-        pricesViewModel.assetsData.observe(viewLifecycleOwner){
+        /*pricesViewModel.assetsData.observe(viewLifecycleOwner){
             when(it){
                 is BaseResponse.Loading -> {
                     fragmentPricesBinding.pricesPb.show()
@@ -108,10 +111,19 @@ class PricesFragment : BaseFragment(R.layout.fragment_prices){
                     Toast.makeText(context,"error",Toast.LENGTH_SHORT).show()
                 }
             }
+        }*/
+
+        pricesViewModel.assetsList.observe(viewLifecycleOwner) {
+            it?.let { res ->
+                pricesListAdapter.updateData(res.data)
+                updateGlobalMarketCap(res.data)
+            } ?: kotlin.run {
+                Toast.makeText(context, "update error", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
-    private fun updateGlobalMarketCap(data: ArrayList<AssetDataModel>) {
+    private fun updateGlobalMarketCap(data: ArrayList<AssetsModelRetrofit>) {
         var globalMarketCapData = 0.0
         for(price in data){
             price.priceUsd?.let {
@@ -119,8 +131,6 @@ class PricesFragment : BaseFragment(R.layout.fragment_prices){
             }
         }
         fragmentPricesBinding.marketCapTv.text = getString(R.string.global_market_cap_str,setAmountWithCurrencyFormat(globalMarketCapData))
-
     }
-
 
 }

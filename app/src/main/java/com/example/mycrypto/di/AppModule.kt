@@ -2,6 +2,9 @@ package com.example.mycrypto.di
 
 import com.example.mycrypto.data.services.RemoteService
 import com.example.mycrypto.data.services.RepositorySDK
+import com.example.mycrypto.data.services.retrofit.RetroClient
+import com.example.mycrypto.data.services.retrofit.RetroRepos
+import com.example.mycrypto.data.services.retrofit.RetrofitApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,4 +23,13 @@ object AppModule {
     @Singleton
     fun provideRepositorySDK(remoteService: RemoteService): RepositorySDK =
     RepositorySDK(remoteService = remoteService)
+
+    @Provides
+    @Singleton
+    fun provideRetrofitService(): RetroClient = RetroClient()
+
+    @Provides
+    @Singleton
+    fun provideRetroRepoSDK(retroClient: RetroClient) : RetroRepos =
+        RetroRepos(retrofitService = retroClient)
 }

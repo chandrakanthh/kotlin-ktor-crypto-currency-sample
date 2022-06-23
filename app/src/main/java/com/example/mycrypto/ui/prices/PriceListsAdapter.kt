@@ -9,18 +9,20 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mycrypto.R
 import com.example.mycrypto.data.models.AssetDataModel
+import com.example.mycrypto.data.models.retrofitmodels.AssetDataModelRetrofit
+import com.example.mycrypto.data.models.retrofitmodels.AssetsModelRetrofit
 import com.example.mycrypto.databinding.AssetsListItemBinding
 import com.example.mycrypto.ui.utils.setChangeValue
 import com.example.mycrypto.ui.utils.setPriceAmount
 import java.text.DecimalFormat
 
-class PricesListAdapter(private val context: Context, private var assetsListItems : ArrayList<AssetDataModel>) :
+class PricesListAdapter(private val context: Context, private var assetsListItems : ArrayList<AssetsModelRetrofit>) :
     RecyclerView.Adapter<PricesListAdapter.PricesViewHolder>(), Filterable{
     private lateinit var assetsListItemBinding : AssetsListItemBinding
-    var filterAssetsListName : ArrayList<AssetDataModel> = arrayListOf()
+    var filterAssetsListName : ArrayList<AssetsModelRetrofit> = arrayListOf()
 
     inner class PricesViewHolder(val listItemBinding: AssetsListItemBinding) : RecyclerView.ViewHolder(listItemBinding.root) {
-       fun bindData(dataListItem: AssetDataModel) {
+       fun bindData(dataListItem: AssetsModelRetrofit) {
            dataListItem.let {
                listItemBinding.assetsItem = it
                setPriceAmount(listItemBinding.headerPriceTv,DecimalFormat("0.00").format(it.priceUsd?.toDouble()))
@@ -38,6 +40,7 @@ class PricesListAdapter(private val context: Context, private var assetsListItem
     }
 
     override fun onBindViewHolder(holder: PricesListAdapter.PricesViewHolder, position: Int) {
+        //val dataListItem = assetsListItems[holder.adapterPosition]
         val dataListItem = assetsListItems[holder.adapterPosition]
         holder.bindData(dataListItem)
     }
@@ -46,18 +49,25 @@ class PricesListAdapter(private val context: Context, private var assetsListItem
         return assetsListItems.size
     }
 
+    fun updateData(list: ArrayList<AssetsModelRetrofit>) {
+        this.assetsListItems = list
+        filterAssetsListName = assetsListItems
+        notifyDataSetChanged()
+    }
+/*
     fun updateData(list: ArrayList<AssetDataModel>) {
         this.assetsListItems = list
         filterAssetsListName = assetsListItems
         notifyDataSetChanged()
     }
+*/
 
     override fun getFilter(): Filter {
         return object : Filter(){
             override fun performFiltering(p0: CharSequence?): FilterResults {
                 val resultList = filterAssetsListName
                 val charString = p0.toString()
-                val filterdList = ArrayList<AssetDataModel>()
+                val filterdList = ArrayList<AssetsModelRetrofit>()
                 if(charString.isEmpty()){
                     filterdList.addAll(filterAssetsListName)
                 }else{
@@ -73,7 +83,7 @@ class PricesListAdapter(private val context: Context, private var assetsListItem
             }
 
             override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
-                assetsListItems = p1?.values as ArrayList<AssetDataModel>
+                assetsListItems = p1?.values as ArrayList<AssetsModelRetrofit>
                 /*assetsListItems = if(p1?.values == null)
                     ArrayList()
                 else
